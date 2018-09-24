@@ -1,0 +1,14 @@
+{
+    "providers": {
+        "awscloudformation": {
+            "AuthRoleName": "tutorracking-20180924073056-authRole",
+            "UnauthRoleArn": "arn:aws:iam::842348302609:role/tutorracking-20180924073056-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::842348302609:role/tutorracking-20180924073056-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "tutorracking-20180924073056-deployment",
+            "UnauthRoleName": "tutorracking-20180924073056-unauthRole",
+            "StackName": "tutorracking-20180924073056",
+            "StackId": "arn:aws:cloudformation:us-east-1:842348302609:stack/tutorracking-20180924073056/4db14e20-bfed-11e8-8442-500c28b4e4fd"
+        }
+    }
+}
