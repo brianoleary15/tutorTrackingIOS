@@ -8,13 +8,13 @@
 
 import UIKit
 import CoreLocation
-import AWSAuthCore
-import AWSAuthUI
+import QuartzCore
 
 class ViewController: UIViewController, CLLocationManagerDelegate {
 
     @IBOutlet weak var longitude: UILabel!
     @IBOutlet weak var latitude: UILabel!
+    @IBOutlet weak var tutoringCenterStatus: UILabel!
     
     var locationManager:CLLocationManager!
     
@@ -26,6 +26,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         
         determineMyCurrentLocation()
         setNeedsStatusBarAppearanceUpdate()
+        
+        tutoringCenterStatus.layer.masksToBounds = true
+        tutoringCenterStatus.layer.cornerRadius=6
+        
     }
     
     func determineMyCurrentLocation() {

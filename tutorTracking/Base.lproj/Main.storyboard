@@ -111,6 +111,7 @@
                     <connections>
                         <outlet property="latitude" destination="FHB-Jk-bFB" id="6Bx-bj-LRx"/>
                         <outlet property="longitude" destination="RSt-jX-85R" id="ORk-9E-q5E"/>
+                        <outlet property="tutoringCenterStatus" destination="alD-P1-0OJ" id="KxR-TJ-8DC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
