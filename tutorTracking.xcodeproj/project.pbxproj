@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A15D8F4216E9E1A00308DDD /* locationPin.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A15D8F3216E9E1A00308DDD /* locationPin.png */; };
 		6F0CC28E2151685E0010BCA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0CC28D2151685E0010BCA4 /* AppDelegate.swift */; };
 		6F0CC2902151685E0010BCA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0CC28F2151685E0010BCA4 /* ViewController.swift */; };
 		6F0CC2932151685E0010BCA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F0CC2912151685E0010BCA4 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A15D8F3216E9E1A00308DDD /* locationPin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = locationPin.png; sourceTree = "<group>"; };
 		6F0CC28A2151685E0010BCA4 /* tutorTracking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tutorTracking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F0CC28D2151685E0010BCA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6F0CC28F2151685E0010BCA4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +76,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A15D8F2216E9DE800308DDD /* image */ = {
+			isa = PBXGroup;
+			children = (
+				0A15D8F3216E9E1A00308DDD /* locationPin.png */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
 		6F0CC2812151685E0010BCA4 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +91,7 @@
 				6F0CC2A12151685F0010BCA4 /* tutorTrackingTests */,
 				6F0CC2AC2151685F0010BCA4 /* tutorTrackingUITests */,
 				6F0CC28B2151685E0010BCA4 /* Products */,
+				0A15D8F2216E9DE800308DDD /* image */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,9 +110,9 @@
 			children = (
 				6F0CC28D2151685E0010BCA4 /* AppDelegate.swift */,
 				6F0CC28F2151685E0010BCA4 /* ViewController.swift */,
-				6F0CC2912151685E0010BCA4 /* Main.storyboard */,
 				6F0CC2942151685F0010BCA4 /* Assets.xcassets */,
 				6F0CC2962151685F0010BCA4 /* LaunchScreen.storyboard */,
+				6F0CC2912151685E0010BCA4 /* Main.storyboard */,
 				6F0CC2992151685F0010BCA4 /* Info.plist */,
 			);
 			path = tutorTracking;
@@ -231,6 +242,7 @@
 			files = (
 				6F0CC2982151685F0010BCA4 /* LaunchScreen.storyboard in Resources */,
 				6F0CC2952151685F0010BCA4 /* Assets.xcassets in Resources */,
+				0A15D8F4216E9E1A00308DDD /* locationPin.png in Resources */,
 				6F0CC2932151685E0010BCA4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

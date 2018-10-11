@@ -21,6 +21,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         
         
         determineMyCurrentLocation()
+        setNeedsStatusBarAppearanceUpdate()
     }
     
     func determineMyCurrentLocation() {
@@ -49,6 +50,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         print("Error \(error)")
     }
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
 
 }
 
