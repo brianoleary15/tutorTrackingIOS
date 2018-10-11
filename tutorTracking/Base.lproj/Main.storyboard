@@ -232,10 +232,10 @@
             </objects>
             <point key="canvasLocation" x="1185" y="93"/>
         </scene>
-        <!--View Controller-->
+        <!--Athlete Sign Up-->
         <scene sceneID="cgw-Mc-uvk">
             <objects>
-                <viewController id="WUq-ZC-KRU" sceneMemberID="viewController">
+                <viewController id="WUq-ZC-KRU" customClass="AthleteSignUp" customModule="tutorTracking" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nBB-OQ-ERo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -247,10 +247,10 @@
             </objects>
             <point key="canvasLocation" x="2145" y="517"/>
         </scene>
-        <!--View Controller-->
+        <!--Coach Sign Up-->
         <scene sceneID="PSy-rw-1Jy">
             <objects>
-                <viewController id="GNc-zg-Whk" sceneMemberID="viewController">
+                <viewController id="GNc-zg-Whk" customClass="CoachSignUp" customModule="tutorTracking" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vts-Hq-Iku">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
