@@ -25,6 +25,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         }
         
         determineMyCurrentLocation()
+        setNeedsStatusBarAppearanceUpdate()
     }
     
     func determineMyCurrentLocation() {
@@ -35,6 +36,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         
         if CLLocationManager.locationServicesEnabled() {
             locationManager.startUpdatingLocation()
+            //locationManager.startUpdatingHeading()
         }
     }
     
@@ -52,23 +54,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         print("Error \(error)")
     }
     
-    func presentAuthUIViewController() {
-        let config = AWSAuthUIConfiguration()
-        config.enableUserPoolsUI = true
-        config.backgroundColor = UIColor.green
-        config.font = UIFont (name: "Helvetica Neue", size: 20)
-        config.isBackgroundColorFullScreen = true
-        config.canCancel = false
-        
-        AWSAuthUIViewController.presentViewController(
-            with: self.navigationController!,
-            configuration: config, completionHandler: { (provider: AWSSignInProvider, error: Error?) in
-                if error == nil {
-                    // SignIn succeeded.
-                } else {
-                    // end user faced error while loggin in, take any required action here.
-                }
-        })
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
+
 }
 
