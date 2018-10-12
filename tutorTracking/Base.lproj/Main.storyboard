@@ -47,33 +47,6 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Getting latitude..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FHB-Jk-bFB">
-                                <rect key="frame" x="211" y="225" width="139" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="139" id="8w0-Wo-UAM"/>
-                                    <constraint firstAttribute="height" constant="30" id="PCO-6C-K2K"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="25"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="locationPin.png" translatesAutoresizingMaskIntoConstraints="NO" id="GrZ-9m-gt0">
-                                <rect key="frame" x="97" y="475" width="180" height="180"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="180" id="aU8-LW-V5w"/>
-                                    <constraint firstAttribute="height" constant="180" id="gkm-Ew-u96"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Student in Tutoring Center" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="alD-P1-0OJ">
-                                <rect key="frame" x="34" y="305" width="306" height="78"/>
-                                <color key="backgroundColor" red="0.50704152960000004" green="0.92912212169999997" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="78" id="YIZ-Bc-rAp"/>
-                                    <constraint firstAttribute="width" constant="306" id="lSI-ue-lKc"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Getting Coordinate" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EPi-T4-rzF">
                                 <rect key="frame" x="34" y="69" width="306" height="39"/>
                                 <constraints>
@@ -84,33 +57,78 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Getting latitude..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FHB-Jk-bFB">
+                                <rect key="frame" x="211" y="225" width="139" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="139" id="8w0-Wo-UAM"/>
+                                    <constraint firstAttribute="height" constant="30" id="PCO-6C-K2K"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Student in Tutoring Center" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="alD-P1-0OJ">
+                                <rect key="frame" x="34" y="305" width="306" height="78"/>
+                                <color key="backgroundColor" red="0.50704152960000004" green="0.92912212169999997" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="78" id="YIZ-Bc-rAp"/>
+                                    <constraint firstAttribute="width" constant="306" id="lSI-ue-lKc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gN-jr-pYc">
+                                <rect key="frame" x="137" y="500" width="100" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="E39-JZ-hao"/>
+                                    <constraint firstAttribute="height" constant="130" id="nou-Uh-4Fi"/>
+                                </constraints>
+                                <state key="normal" title="notify" image="locationPin.png"/>
+                                <connections>
+                                    <action selector="notifyButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UYY-fD-iMX"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click pin to notify athelete" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yLm-Ir-8JV">
+                                <rect key="frame" x="62" y="646" width="250" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="iwP-bQ-P2J"/>
+                                    <constraint firstAttribute="width" constant="250" id="rm7-RM-45M"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="1" green="0.16850497180069257" blue="0.059701126481021549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.090196078430000007" green="0.48627450979999998" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="GrZ-9m-gt0" firstAttribute="top" secondItem="alD-P1-0OJ" secondAttribute="bottom" constant="92" id="4OG-za-GFl"/>
+                            <constraint firstItem="4gN-jr-pYc" firstAttribute="top" secondItem="alD-P1-0OJ" secondAttribute="bottom" constant="117" id="4FV-vd-uQM"/>
                             <constraint firstItem="alD-P1-0OJ" firstAttribute="top" secondItem="Bh3-3n-juS" secondAttribute="bottom" constant="50" id="7bd-hf-8bB"/>
                             <constraint firstItem="EPi-T4-rzF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="7rN-PI-Co4"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="alD-P1-0OJ" secondAttribute="trailing" constant="35" id="BFp-UK-l2D"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4gN-jr-pYc" secondAttribute="trailing" constant="138" id="Ig4-9S-6Pg"/>
+                            <constraint firstItem="yLm-Ir-8JV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="62" id="KfJ-1y-pMU"/>
                             <constraint firstItem="FHB-Jk-bFB" firstAttribute="leading" secondItem="Bh3-3n-juS" secondAttribute="trailing" constant="29" id="PdJ-gs-gcP"/>
                             <constraint firstItem="EPi-T4-rzF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="34" id="SKi-SN-rdO"/>
-                            <constraint firstItem="GrZ-9m-gt0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="97" id="Wm5-m2-xrM"/>
                             <constraint firstItem="Bh3-3n-juS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="77" id="c6W-cV-fL6"/>
                             <constraint firstItem="RSt-jX-85R" firstAttribute="leading" secondItem="5by-gR-Oy9" secondAttribute="trailing" constant="8" id="ddK-x5-ohB"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EPi-T4-rzF" secondAttribute="trailing" constant="35" id="di2-mJ-QBp"/>
+                            <constraint firstItem="4gN-jr-pYc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="137" id="hiv-tN-5eo"/>
+                            <constraint firstItem="yLm-Ir-8JV" firstAttribute="top" secondItem="4gN-jr-pYc" secondAttribute="bottom" constant="16" id="jyX-di-8s7"/>
                             <constraint firstItem="5by-gR-Oy9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="77" id="mJ5-8o-2Vd"/>
                             <constraint firstItem="FHB-Jk-bFB" firstAttribute="top" secondItem="RSt-jX-85R" secondAttribute="bottom" constant="55" id="p8e-AE-RgH"/>
                             <constraint firstItem="alD-P1-0OJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="34" id="sYa-1F-ecS"/>
                             <constraint firstItem="5by-gR-Oy9" firstAttribute="top" secondItem="EPi-T4-rzF" secondAttribute="bottom" constant="32" id="ser-Gs-hYs"/>
                             <constraint firstItem="Bh3-3n-juS" firstAttribute="top" secondItem="5by-gR-Oy9" secondAttribute="bottom" constant="55" id="sm5-Kd-tpP"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GrZ-9m-gt0" secondAttribute="trailing" constant="98" id="uJZ-WN-Kqv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yLm-Ir-8JV" secondAttribute="trailing" constant="63" id="vWt-xc-6aV"/>
                             <constraint firstItem="RSt-jX-85R" firstAttribute="top" secondItem="EPi-T4-rzF" secondAttribute="bottom" constant="32" id="xok-JH-niy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="mXu-up-b9E"/>
                     <connections>
                         <outlet property="latitude" destination="FHB-Jk-bFB" id="6Bx-bj-LRx"/>
                         <outlet property="longitude" destination="RSt-jX-85R" id="ORk-9E-q5E"/>
+                        <outlet property="notifyButton" destination="4gN-jr-pYc" id="Q5q-tc-IOK"/>
+                        <outlet property="notifyLabel" destination="yLm-Ir-8JV" id="L0i-gB-Vai"/>
                         <outlet property="tutoringCenterStatus" destination="alD-P1-0OJ" id="KxR-TJ-8DC"/>
                     </connections>
                 </viewController>
@@ -118,24 +136,135 @@
             </objects>
             <point key="canvasLocation" x="85.599999999999994" y="93.103448275862078"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="cKu-Fo-4mX">
+        <!--Create Account-->
+        <scene sceneID="w0k-l4-tZr">
             <objects>
-                <navigationController id="LDg-nD-9Or" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eW5-4Z-mB6">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
+                <viewController id="M8Y-GX-vH8" customClass="CreateAccount" customModule="tutorTracking" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="m7W-Iv-AfN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CoachAthletes.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="lX7-b3-2Ip">
+                                <rect key="frame" x="-66" y="0.0" width="708" height="812"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="812" id="Tio-SS-HF5"/>
+                                    <constraint firstAttribute="width" constant="708" id="mtV-9E-2gM"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Creant account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LNF-0B-dPq">
+                                <rect key="frame" x="47" y="102" width="281" height="81"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="281" id="SEv-48-hZj"/>
+                                    <constraint firstAttribute="height" constant="81" id="fwW-hS-8UO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nvf-Td-e53">
+                                <rect key="frame" x="169" y="264" width="36" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="2Ti-wr-IJR"/>
+                                    <constraint firstAttribute="width" constant="36" id="HHj-64-hfm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5sL-f3-VCO">
+                                <rect key="frame" x="108" y="315" width="158" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="86s-wA-ZeC"/>
+                                    <constraint firstAttribute="width" constant="158" id="8kA-Wb-Yde"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <state key="normal" title="Athlete">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="WUq-ZC-KRU" kind="show" id="f31-k3-dHl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A1x-M1-L11">
+                                <rect key="frame" x="108" y="200" width="158" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="158" id="Bnz-Jj-YRO"/>
+                                    <constraint firstAttribute="height" constant="46" id="qwO-qU-8QL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <state key="normal" title="Coach">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="GNc-zg-Whk" kind="show" id="msN-Ab-7XD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nvf-Td-e53" firstAttribute="leading" secondItem="Vea-sX-dy3" secondAttribute="leading" constant="169" id="15I-Sl-lkU"/>
+                            <constraint firstItem="Vea-sX-dy3" firstAttribute="trailing" secondItem="nvf-Td-e53" secondAttribute="trailing" constant="170" id="9dz-cL-deI"/>
+                            <constraint firstItem="5sL-f3-VCO" firstAttribute="top" secondItem="nvf-Td-e53" secondAttribute="bottom" constant="18" id="ArD-bQ-O5s"/>
+                            <constraint firstItem="A1x-M1-L11" firstAttribute="top" secondItem="LNF-0B-dPq" secondAttribute="bottom" constant="17" id="FVm-12-KT3"/>
+                            <constraint firstItem="LNF-0B-dPq" firstAttribute="top" secondItem="Vea-sX-dy3" secondAttribute="top" constant="58" id="Gxu-z9-QbJ"/>
+                            <constraint firstItem="Vea-sX-dy3" firstAttribute="trailing" secondItem="A1x-M1-L11" secondAttribute="trailing" constant="109" id="RM0-W6-O5A"/>
+                            <constraint firstItem="nvf-Td-e53" firstAttribute="top" secondItem="A1x-M1-L11" secondAttribute="bottom" constant="18" id="SqD-xN-HSf"/>
+                            <constraint firstItem="lX7-b3-2Ip" firstAttribute="leading" secondItem="m7W-Iv-AfN" secondAttribute="leading" constant="-66" id="VBG-cO-wCG"/>
+                            <constraint firstItem="LNF-0B-dPq" firstAttribute="leading" secondItem="Vea-sX-dy3" secondAttribute="leading" constant="47" id="VTu-3E-4yh"/>
+                            <constraint firstAttribute="trailing" secondItem="lX7-b3-2Ip" secondAttribute="trailing" constant="-267" id="fCL-9q-KYJ"/>
+                            <constraint firstItem="5sL-f3-VCO" firstAttribute="leading" secondItem="Vea-sX-dy3" secondAttribute="leading" constant="108" id="jUh-gP-1Wa"/>
+                            <constraint firstItem="Vea-sX-dy3" firstAttribute="trailing" secondItem="5sL-f3-VCO" secondAttribute="trailing" constant="109" id="kKf-oV-K62"/>
+                            <constraint firstAttribute="bottom" secondItem="lX7-b3-2Ip" secondAttribute="bottom" id="l1b-PT-Nid"/>
+                            <constraint firstItem="Vea-sX-dy3" firstAttribute="trailing" secondItem="LNF-0B-dPq" secondAttribute="trailing" constant="47" id="oIy-T7-iHU"/>
+                            <constraint firstItem="A1x-M1-L11" firstAttribute="leading" secondItem="Vea-sX-dy3" secondAttribute="leading" constant="108" id="val-J1-m70"/>
+                            <constraint firstItem="lX7-b3-2Ip" firstAttribute="top" secondItem="m7W-Iv-AfN" secondAttribute="top" id="vvQ-Xj-GjO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Vea-sX-dy3"/>
+                    </view>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Da4-yd-fsu"/>
+                        <outlet property="athleteButton" destination="5sL-f3-VCO" id="lbG-EO-Wvr"/>
+                        <outlet property="coachButton" destination="A1x-M1-L11" id="lna-7g-Aa0"/>
+                        <outlet property="imageView" destination="lX7-b3-2Ip" id="ewv-Wd-ajh"/>
+                        <outlet property="orLabel" destination="nvf-Td-e53" id="Dn1-B0-pRS"/>
                     </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nVX-c9-kHJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nSn-eF-siD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-718" y="134"/>
+            <point key="canvasLocation" x="1185" y="93"/>
+        </scene>
+        <!--Athlete Sign Up-->
+        <scene sceneID="cgw-Mc-uvk">
+            <objects>
+                <viewController id="WUq-ZC-KRU" customClass="AthleteSignUp" customModule="tutorTracking" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nBB-OQ-ERo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Stf-ox-DiM"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yoc-PC-rWn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2145" y="517"/>
+        </scene>
+        <!--Coach Sign Up-->
+        <scene sceneID="PSy-rw-1Jy">
+            <objects>
+                <viewController id="GNc-zg-Whk" customClass="CoachSignUp" customModule="tutorTracking" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vts-Hq-Iku">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Sjd-5l-cq4"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0rN-Sh-Spr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2145" y="-197"/>
         </scene>
     </scenes>
     <resources>
+        <image name="CoachAthletes.jpg" width="2000" height="1000"/>
         <image name="locationPin.png" width="2400" height="2400"/>
     </resources>
 </document>

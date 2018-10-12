@@ -16,6 +16,13 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var latitude: UILabel!
     @IBOutlet weak var tutoringCenterStatus: UILabel!
     
+    @IBOutlet weak var notifyLabel: UILabel!
+    
+    
+    @IBOutlet weak var notifyButton: UIButton!
+    
+    
+    
     var locationManager:CLLocationManager!
     
     override func viewDidLoad() {
@@ -30,6 +37,12 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         tutoringCenterStatus.layer.masksToBounds = true
         tutoringCenterStatus.layer.cornerRadius=6
         
+        notifyButton.alpha = 0.5
+        //notifyButton.setTitleColor(UIColor.gray, for: .disabled)
+        notifyLabel.layer.masksToBounds = true
+        notifyLabel.layer.cornerRadius=6
+        notifyLabel.backgroundColor = UIColor.black.withAlphaComponent(0.4)
+       
     }
     
     func determineMyCurrentLocation() {
@@ -61,6 +74,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
-
+    
+   
+    @IBAction func notifyButtonPressed(_ sender: UIButton) {
+        print("Button clicked")
+    }
+    
 }
 
